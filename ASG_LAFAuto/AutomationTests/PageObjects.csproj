@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D81FC6FA-3CBD-469B-AA6C-6020DCC0F1E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PageObjects</RootNamespace>
+    <AssemblyName>PageObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.7\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.UnitTestFramework.Extensions">
+      <HintPath>..\packages\Microsoft.UnitTestFramework.Extensions.1.0.0.3\lib\net40\Microsoft.UnitTestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.3.0.1\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.3.0.1\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LAFMethods.cs" />
+    <Compile Include="PageObjects\Gmail\GmailPage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\Atlas\AtlasPage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LAF Admin\Application Pages\LAFAdmin_Applications_Page.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LAF Admin\LAFAdminMasterPage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LAF Admin\User Access Request Pages\LAFAdmin_ManageAccessRequests_Page.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LAF Admin\User Group Pages\LAFAdmin_ManageUserGroups_Page.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LAF Admin\Users Pages\LAFAdmin_ManageUsers_Section_Page.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LAFLogin_And_Logout_Page.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LATCH\LATCHPage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\Overseas Reporting System\ORS_DocumentDownloadPopUpWindow.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\Overseas Reporting System\ORS_DocumentPackPage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\Overseas Reporting System\ORS_HomePage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\Overseas Reporting System\ORS_MaintainPage.cs" />
+    <Compile Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\Secure Store\SecureStorePage.cs" />
+    <Compile Include="PageObjects\PageMaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PageObjects\Lloyd%27s Applications\LAF Authenticated Applications\LDR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

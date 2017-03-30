@@ -1,0 +1,5 @@
+C:\temp\New folder\ASG_LAFAuto\AutomationTests\bin\Debug\AutomationTests.exe.config
+C:\temp\New folder\ASG_LAFAuto\AutomationTests\obj\Debug\Framework.csprojResolveAssemblyReference.cache
+C:\temp\New folder\ASG_LAFAuto\AutomationTests\obj\Debug\AutomationTests.frmResults.resources
+C:\temp\New folder\ASG_LAFAuto\AutomationTests\obj\Debug\AutomationTests.frmMain.resources
+C:\temp\New folder\ASG_LAFAuto\AutomationTests\obj\Debug\Framework.csproj.GenerateResource.Cache

@@ -1,0 +1,1 @@
+C:\temp\New folder\ExcelDrivenLAF\PageObjects\obj\Debug\PageObjects.csprojResolveAssemblyReference.cache
